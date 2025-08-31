@@ -13,8 +13,8 @@ public class modoAvion extends BroadcastReceiver {
         boolean avion = intent.getBooleanExtra("state", false);
 
         if (avion) {
-            // Modo avión ACTIVADO
-            Toast.makeText(context, "✈️ El modo avión se activó", Toast.LENGTH_SHORT).show();
+            // Modo avión activado
+            Toast.makeText(context, "El modo avión se activó", Toast.LENGTH_SHORT).show();
 
             // Intent para abrir app de llamadas
             Intent llamada = new Intent(Intent.ACTION_DIAL);
@@ -23,8 +23,8 @@ public class modoAvion extends BroadcastReceiver {
             context.startActivity(llamada);
 
         } else {
-            // Modo avión DESACTIVADO
-            Toast.makeText(context, "📶 El modo avión se desactivó", Toast.LENGTH_SHORT).show();
+            // Modo avión desactivado
+            Toast.makeText(context, "El modo avión se desactivó", Toast.LENGTH_SHORT).show();
         }
     }
 }
